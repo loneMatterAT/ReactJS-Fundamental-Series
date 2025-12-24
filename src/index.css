@@ -253,24 +253,25 @@ body {
   display: block;
   margin: 50px auto;
   border: 3px solid hsl(0, 0%, 71%);
-  
 }
+
 
 .profile-pic {
   width: 300px;
   display: block;
   margin: 50px auto;
   border: 1px solid hsl(0, 0%, 85%); 
-  cursor: pointer;
+  cursor: pointer;  
+}
 
-  /* Animation */
+.profile-pic:hover {
   animation-name: glow;
   animation-duration: 10s;
 }
 
 @keyframes glow {
-  /* values  (1)horizontal offset  (2)vertical offset (3)blur offset (4)color */
-  50%{box-shadow: 0px 0px 50px hsl(0, 0%, 5%) ;}
+  /* values  (1)horizontal offset  (2)vertical offset (3)blur offset (4)color*/
+  50%{box-shadow: 0px 0px 50px hsl(0, 0%, 50%) ;}
 }
 
 .title {
@@ -280,6 +281,15 @@ body {
   color: hsl(0, 0%, 85%);
 }
 
+.quote {
+  font-family: cursive;
+  font-size: 0.8em;
+  text-align: center;
+  color: hsl(0, 0%, 85%);
+  display: block;
+  margin: 30px auto;
+}
+
 .proceed-button {
   display: block;
   margin: 50px auto;
@@ -287,7 +297,7 @@ body {
   border-radius: 5px;
   padding: 12px;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
+  font-size: 0.8em;
   font-weight: bold;
   color: hsl(0, 0%, 13%);
   cursor: pointer;
