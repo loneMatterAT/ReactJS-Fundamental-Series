@@ -21,8 +21,13 @@
 // import List from '../06 - React Rendering List/List.jsx'
 
 // 07 - React Click Event
-import Button from '../07 - React Click Event/Button.jsx'
-import ProfilePicture from '../07 - React Click Event/ProfilePicture.jsx'
+// import Button from '../07 - React Click Event/Button.jsx'
+// import ProfilePicture from '../07 - React Click Event/ProfilePicture.jsx'
+
+// 08 - React Hook and useState()
+import MyComponent from '../08 - React Hook & useState/MyComponent.jsx'
+import Counter from '../08 - React Hook & useState/Project/Counter.jsx'
+
 
 
 function App() {
@@ -99,7 +104,7 @@ function App() {
       //                     {id: 4, name: "Elephant", class: "Herbivores", weight: 4000},
       //                     {id: 5, name: "Dolphin", class: "Carnivores", weight: 40}];    
 
-      // // Second reusable list
+      // Second reusable list
       // const humans = [{id: 6, name: "Bane", class: "American", weight: 70},
       //                     {id: 7, name: "Liam", class: "Chinese", weight: 58},
       //                     {id: 8, name: "Cassandra", class: "Japanese", weight: 50},
@@ -122,11 +127,26 @@ function App() {
         We can respond to clicks by pasing
         a callback to the onClick event handler.
       */}
-      return(  
-      <>
-            {/* <Button/> */}
-            <ProfilePicture/>
-      </>
+      // return(  
+      // <>
+      //       {/* <Button/> */}
+      //       {/* <ProfilePicture/> */}
+      // </>
+      // );
+
+      // 08 - React Hook and useState()
+      // React Hook = Special function that allow functional components
+      //              to use React features without writing class components (React v16.8)
+      //              (useState, useEffect, useContext, useReducer, ueCallback, and more...)
+
+      // useState() = A React hook that allows the creation of a stateful variable
+      //              AND a setter function to update its value in the virtual DOM.
+      //              [name, setName]
+      return(
+          <>
+              {/* <MyComponent/> */}
+              <Counter/>
+          </>
       );
 }
 

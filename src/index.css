@@ -243,7 +243,7 @@ button:focus-visible {
   cursor: pointer;
 }
 
-/* 07 - ReactJS Click Event */
+/* 07 - ReactJS Click Event CSS */
 body {
   background-color: hsl(0, 0%, 13%);
 }
@@ -309,5 +309,41 @@ body {
   transition: background-color 0.25s;
 }
 
+/* 08 - ReactJS React Hook and useState() CSS */
+body {
+  background-color: #ffffff;
+}
+
+.counter-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+
+
+}
+
+.count-display {
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.counter-button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-right: 5px;
+  background-color: hsl(197, 100%, 58%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter-button:hover {
+  background-color: hsl(197, 100%, 48%);
+  transition: background-color 0.25s;
+}
 
 
