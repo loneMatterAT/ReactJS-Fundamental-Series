@@ -25,8 +25,11 @@
 // import ProfilePicture from '../07 - React Click Event/ProfilePicture.jsx'
 
 // 08 - React Hook and useState()
-import MyComponent from '../08 - React Hook & useState/MyComponent.jsx'
-import Counter from '../08 - React Hook & useState/Project/Counter.jsx'
+// import MyComponent from '../08 - React Hook & useState/MyComponent.jsx'
+// import Counter from '../08 - React Hook & useState/Project/Counter.jsx'
+
+// 09 - React onChange
+import MyComponent from '../09- React onChange/MyComponent.jsx'
 
 
 
@@ -142,10 +145,21 @@ function App() {
       // useState() = A React hook that allows the creation of a stateful variable
       //              AND a setter function to update its value in the virtual DOM.
       //              [name, setName]
+      // return(
+      //     <>
+      //         {/* <MyComponent/> */}
+      //         {/* <Counter/> */}
+      //     </>
+      // );
+
+      // 09 - React onChange
+      // onChange = event handler used primarily with form elements
+      //            ex. <input>, <textarea>, <select>, <radio>
+      //            Triggers a function every time the value of the input changes
+
       return(
           <>
-              {/* <MyComponent/> */}
-              <Counter/>
+              <MyComponent/>
           </>
       );
 }
