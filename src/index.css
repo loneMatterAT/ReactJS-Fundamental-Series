@@ -346,4 +346,86 @@ body {
   transition: background-color 0.25s;
 }
 
+/* 10 - ReactJS Color Picker Program CSS */
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 40%);
+}
 
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid hsl(0, 0%, 30%);
+  border-radius: 25px;
+  padding: 20px;
+  width: 500px;
+  margin: auto;
+  background-color: azure;
+  cursor: pointer;
+}
+
+.color-picker-container:hover {
+  /*Animation property within the container box*/
+  animation-name: colorChange; /*changing the color of an element/box*/
+
+  /*Animation duration property*/
+  animation-duration: 5s;
+
+  /* Set the changing color into infinite */
+  animation-iteration-count: infinite;
+
+  /* Transition for smooth animation of changing colors */
+  transition: animation-iteration-count 0.25s ease-in-out;
+}
+
+/* Animation : colorChange */
+@keyframes colorChange { /*changing the color of an element/box*/
+  0%{background-color: hsl(0, 86%, 67%)} /*0% changing bg color of an element/box to light red*/
+  20%{background-color: hsl(24, 86%, 67%)} /*20% changing bg color of an element/box to orange*/
+  40%{background-color: hsl(54, 86%, 67%)} /*40% changing bg color of an element/box to yellow*/
+  60%{background-color: hsl(118, 86%, 67%)} /*60% changing bg color of an element/box to light green*/
+  80%{background-color: hsl(189, 86%, 67%)} /*80% changing bg color of an element/box to light blue*/
+  100%{background-color: hsl(276, 86%, 67%)} /*100% changing bg color of an element/box to purple*/
+}
+
+.color-header {
+  margin: 50px;
+  font-size: 3rem;
+  color: hsl(0, 0%, 13%);
+}
+
+.color-display {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0, 0%, 80%);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition:  0.25s ease;
+}
+
+.color-display p {
+  font-family: cursive;
+  color: hsl(0, 0%, 20%);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.color-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 13%);
+}
+
+/* We use attribute selector for selecting specific and only all input elements that had type 'color' */
+input[type="color"] {
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0, 0%, 80%);
+}

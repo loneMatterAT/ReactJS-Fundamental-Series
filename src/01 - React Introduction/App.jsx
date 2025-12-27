@@ -29,7 +29,10 @@
 // import Counter from '../08 - React Hook & useState/Project/Counter.jsx'
 
 // 09 - React onChange
-import MyComponent from '../09- React onChange/MyComponent.jsx'
+// import MyComponent from '../09- React onChange/MyComponent.jsx'
+
+// 10 - React Color Picker Program
+import ColorPicker from '../10 - React Color Picker Program/ColorPicker.jsx'
 
 
 
@@ -157,9 +160,16 @@ function App() {
       //            ex. <input>, <textarea>, <select>, <radio>
       //            Triggers a function every time the value of the input changes
 
+      // return(
+      //     <>
+      //         <MyComponent/>
+      //     </>
+      // );
+
+      // 10 - React Color Picker Program
       return(
           <>
-              <MyComponent/>
+              <ColorPicker/>
           </>
       );
 }
