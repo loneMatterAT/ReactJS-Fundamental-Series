@@ -347,10 +347,10 @@ body {
 }
 
 /* 10 - ReactJS Color Picker Program CSS */
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: hsl(0, 0%, 40%);
-}
+} */
 
 .color-picker-container {
   display: flex;
@@ -429,3 +429,122 @@ input[type="color"] {
   border-radius: 10px;
   border: 3px solid hsl(0, 0%, 80%);
 }
+
+/* 11 - ReactJS Ordering Form CSS */
+body {
+  /* background-image: url('assets/11\ -\ Ordering\ Form\ Program\ Pics/bg.png'); - Set the bg image using url() function */
+  background-repeat: no-repeat; /*To avoids the repeat of bg image especially if its small size*/
+  background-position: center; /*Set the position of bg to center*/
+  background-attachment: fixed; /*Sets whether a bg image scrolls with the rest of page or it is fixed and position to the middle of the screen or viewfort*/
+  background-size: cover; /*Now image was taking up the entire screen of the bg*/
+}
+
+.first-container {
+  display: inline-block;
+  width: 35%;
+  height: 600px;
+  padding: 20px;
+  padding-left: 32px;
+  margin: 20px 30px;
+  margin-left: 100px;
+
+  background-color: rgba(255, 255, 255, 0.275);
+  box-shadow: 1px 1px 2px 1px rgba(155, 155, 155, 0.25);
+  border: 1.5px solid hsl(0, 100%, 99%);
+  border-radius: 10px;
+}
+
+.product-name {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 43%);
+  margin-left: 3px;
+  margin-bottom: -5px;
+}
+
+.rates {
+  font-size: 12px;
+}
+
+.reviews {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: hsl(240, 100%, 69%);
+}
+
+.product-desc {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-size: 15.5px;
+  color: hsl(0, 0%, 37%);
+  line-height: 28px;
+}
+
+.product-price {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 37%);
+  margin-top: -7px;
+  margin-bottom: 5px;
+}
+
+.product-img {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -20px;
+}
+
+.product-variants-img {
+  width: 50px;
+  margin-right: 10px;
+  margin-left: -5px;
+  border: 1px solid hsl(0, 0%, 85%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-variants-img:hover {
+  border: 1px solid hsl(0, 0%, 37%);
+  transition: border 0.25s ease;
+}
+
+.second-container {
+  display: inline-block;
+  width: 280px;
+  height: 300px;
+  padding: 20px;
+  padding-left: 32px;
+  padding-top: 20px;
+  margin: 20px 10px; /* Top and Bottom 20px, Left and Right 10px */
+  vertical-align: top; /* Align the container to the top */
+
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
+  border: 1.5px solid hsl(0, 100%, 99%);
+  border-radius: 10px;
+}
+
+.order-section {
+  font-family: "Roboto", "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 43%);
+  margin-bottom: -5px;
+}
+
+.picker-container {
+  border: 1px solid hsl(0, 0%, 73%);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.picker-container h1 {
+  font-family: "Inter", "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/* 12 - ReactJS Updater Function CSS */

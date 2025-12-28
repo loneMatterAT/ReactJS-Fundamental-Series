@@ -32,7 +32,13 @@
 // import MyComponent from '../09- React onChange/MyComponent.jsx'
 
 // 10 - React Color Picker Program
-import ColorPicker from '../10 - React Color Picker Program/ColorPicker.jsx'
+// import ColorPicker from '../10 - React Color Picker Program/ColorPicker.jsx'
+
+// 11 - React Ordering Form Program
+// import OrderingForm from '../11 - React Ordering Form Program/OrderingForm.jsx'
+
+// 12 - React Updater Function
+import MyComponent from '../12 - React Updater Function/MyComponent.jsx';
 
 
 
@@ -167,11 +173,31 @@ function App() {
       // );
 
       // 10 - React Color Picker Program
+      // return(
+      //     <>
+      //         <ColorPicker/>
+      //     </>
+      // );
+
+      // 11 - React Ordering Form Program
+      // return(
+      //   <>
+      //       <OrderingForm/>
+      //   </>
+      // );
+
+      // 12 - React Updater Function
+      // Updater Function = A function pased as an argument to setState() usually.
+      //                    ex. setYear(year + 1) ex. setYear(updater function) or setYear(arrow function)
+      //                    Allow for safe updates based on the previous state.
+      //                    Used with multiple state updates and asynchronous functions.
+      //                    Good practice to use updater functions
       return(
-          <>
-              <ColorPicker/>
-          </>
+        <>
+            <MyComponent/>
+        </>
       );
+
 }
 
 export default App

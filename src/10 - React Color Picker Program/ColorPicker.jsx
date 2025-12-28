@@ -20,9 +20,7 @@ function handleColorChange(event) {
             </div>
             <label for="color-pick" className="color-label">Select a Color:</label>
             <input name="color-pick" type="color" value={color} onChange={handleColorChange} />
-
-          </div>
-            
+          </div>    
         </>
   );
 }
