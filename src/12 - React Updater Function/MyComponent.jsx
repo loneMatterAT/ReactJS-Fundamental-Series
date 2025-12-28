@@ -5,6 +5,9 @@ function MyComponent() {
 
   const [count, setCount] = useState(0); // initial value of useState: 0
 
+  // Using Updater Function on setting year
+  // ex. setYear(y => y + 1);
+
   // Function for incrementation
   // Note: Uses the CURRENT sstate to calculate the NEXT state.
   //       set functions do not trigger an update.

@@ -188,7 +188,7 @@ function App() {
 
       // 12 - React Updater Function
       // Updater Function = A function pased as an argument to setState() usually.
-      //                    ex. setYear(year + 1) ex. setYear(updater function) or setYear(arrow function)
+      //                    ex. setYear(year + 1) ex. setYear(updater function) or setYear(arrow function) 
       //                    Allow for safe updates based on the previous state.
       //                    Used with multiple state updates and asynchronous functions.
       //                    Good practice to use updater functions
