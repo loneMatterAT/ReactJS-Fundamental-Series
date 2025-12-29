@@ -547,4 +547,85 @@ body {
   font-size: 15px;
 }
 
-/* 12 - ReactJS Updater Function CSS */
+/* 13 - ReactJS Updating useState Object CSS */
+body {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  background-image: url('assets/13\ -\ React\ Updating\ useState\ Object\ Pics/car-bg.jpg'); /* Set the bg image using url() function */
+}
+
+.car-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  border: 2px solid hsl(0, 0%, 89%);
+  border-radius: 10px;
+  padding: 10px 10px;
+
+  animation-name: glow;
+  animation-duration: 10s;
+}
+
+.car-container:hover {
+  /*Animation property within the container box*/
+  animation-name: glow; /*changing the color of an element/box*/
+
+  /*Animation duration property*/
+  animation-duration: 5s;
+
+  /* Set the changing color into infinite */
+  animation-iteration-count: infinite;
+
+  /* Transition for smooth animation of changing colors */
+  transition: animation-iteration-count 0.25s ease-in-out;
+}
+
+@keyframes glow {
+  /* values  (1)horizontal offset  (2)vertical offset (3)blur offset (4)color*/
+  50%{box-shadow: 0px 0px 50px hsl(0, 65%, 45%) ;}
+}
+
+.fav-car {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
+.car-year {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 14%);
+  background-color: hsl(0, 100%, 72%);
+}
+
+.car-make {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 14%);
+  background-color: hsl(0, 100%, 72%);
+}
+
+.car-model {
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 14%);
+  background-color: hsl(0, 100%, 72%);
+}
+
