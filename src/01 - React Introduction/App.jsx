@@ -41,7 +41,10 @@
 // import MyComponent from '../12 - React Updater Function/MyComponent.jsx';
 
 // 13 - React Updating useState Object
-import MyComponent from '../13 - React Updating useState Object/MyComponent.jsx';
+// import MyComponent from '../13 - React Updating useState Object/MyComponent.jsx';
+
+// 14 - React Updating State of Array
+import FoodList from '../14 - React Updating State of Array/FoodList.jsx';
 
 
 
@@ -202,11 +205,19 @@ function App() {
       // );
 
       // 13 - React Updating useState Object
+      // return(
+      //   <>
+      //       <MyComponent/>
+      //   </>
+      // );  
+
+      // 14 - React Updating State of Array
       return(
         <>
-            <MyComponent/>
+            <FoodList/>
         </>
-      );  
+
+      );
 }
 
 export default App

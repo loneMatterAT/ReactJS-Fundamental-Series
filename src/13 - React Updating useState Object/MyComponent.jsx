@@ -34,7 +34,7 @@ function MyComponent() {
   return(
     <>
           <div className="car-container">
-            <p className="fav-car">Your Favorite Car is : {car.year} {car.make} {car.model}</p>
+            <p className="fav-car">Your Favorite Car is: {car.year} {car.make} {car.model}</p>
 
             <input className="car-year" type="number" value={car.year} onChange={handleYearChange}/><br/>
             <input className="car-make" type="text" value={car.make} onChange={handleMakeChange}/><br/>

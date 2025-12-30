@@ -591,6 +591,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   color: hsl(0, 0%, 100%);
+  text-align: center;
 }
 
 .car-year {
@@ -629,3 +630,101 @@ body {
   background-color: hsl(0, 100%, 72%);
 }
 
+
+/* 14 - ReactJS Updating State of Array CSS */
+body {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  background-image: url('assets/14\ -\ React\ Updating\ State\ of\ Array\ Pics/food-bg2.jpg'); /* Set the bg image using url() function */
+  background-repeat: no-repeat; /*To avoids the repeat of bg image especially if its small size*/
+  background-position: center; /*Set the position of bg to center*/
+  background-attachment: fixed; /*Sets whether a bg image scrolls with the rest of page or it is fixed and position to the middle of the screen or viewfort*/
+  background-size: cover; /*Now image was taking up the entire screen of the bg*/
+  -webkit-backdrop-filter: blur(5px); /* Safari support */
+  backdrop-filter: blur(5px); /* Blur behind the box */
+  border-radius: 10px;
+}
+
+.food-container {
+  box-shadow: 2.5px 3px 3px 1.5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 15px 15px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 45px;
+}
+
+
+.food-header {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px 3px hsl(0, 0%, 80%);
+
+   /*Animation property within the header*/
+  animation-name: colorChange; /*changing the color of an element/header*/
+
+  /*Animation duration property*/
+  animation-duration: 5s;
+
+  /* Set the changing color into infinite */
+  animation-iteration-count: infinite;
+
+  /* Transition for smooth animation of changing colors */
+  transition: animation-iteration-count 0.25s ease-in-out;
+}
+
+@keyframes colorChange { /*changing the color of text*/
+  0%{color: hsl(0, 86%, 67%)} /*0% changing text color to light red*/
+  20%{color: hsl(24, 86%, 67%)} /*20% changing text color to orange*/
+  40%{color: hsl(0, 0%, 62%)} /*40% changing text color to yellow*/
+  60%{color: hsl(0, 1%, 25%)} /*60% changing text color to light green*/
+  80%{color: hsl(189, 87%, 43%)} /*80% changing text color to light blue*/
+  100%{color: hsl(0, 86%, 67%)} /*100% changing text color to purple*/
+}
+
+.food-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+  color: hsl(0, 0%, 12%);
+  text-shadow: 1px 1px 2px hsl(0, 0%, 80%);
+}
+
+.food-input {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 auto; /* center the input box by setting magin first to 0 and then auto that will center it */
+  display: block; /* to center the input box */
+  text-align: center;
+}
+
+.add-food-btn {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  padding: 4px 7px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: hsl(0, 0%, 36%);
+  color: #ececec;
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: -10px;
+  display: block; /* to center the button */
+  text-align: center;
+  cursor: pointer;
+}
+
+.add-food-btn:hover {
+  background-color: hsl(0, 0%, 14%);
+  transition: background-color 0.25s;
+}
+
+.add-food-btn:active {
+  opacity: 0.8;
+  transition: opacity 0.20s;
+}
