@@ -639,9 +639,9 @@ body {
   background-position: center; /*Set the position of bg to center*/
   background-attachment: fixed; /*Sets whether a bg image scrolls with the rest of page or it is fixed and position to the middle of the screen or viewfort*/
   background-size: cover; /*Now image was taking up the entire screen of the bg*/
-  -webkit-backdrop-filter: blur(5px); /* Safari support */
-  backdrop-filter: blur(5px); /* Blur behind the box */
-  border-radius: 10px;
+  /* -webkit-backdrop-filter: blur(5px); - Safari support
+  backdrop-filter: blur(5px); - Blur behind the box 
+  border-radius: 10px; */
 }
 
 .food-container {
@@ -727,4 +727,127 @@ body {
 .add-food-btn:active {
   opacity: 0.8;
   transition: opacity 0.20s;
+}
+/* 15 - ReactJS Updating State of Array Object CSS */
+body {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  background-image: url('assets/15\ -\ React\ Updating\ State\ of\ Array\ Object\ Pics/car-bg1.jpg'); /* Set the bg image using url() function */
+  background-repeat: no-repeat; /*To avoids the repeat of bg image especially if its small size*/
+  background-position: center; /*Set the position of bg to center*/
+  background-attachment: fixed; /*Sets whether a bg image scrolls with the rest of page or it is fixed and position to the middle of the screen or viewfort*/
+  background-size: cover; /*Now image was taking up the entire screen of the bg*/
+  /* -webkit-backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px); 
+  border-radius: 10px;  */
+}
+
+.cars-container {
+  box-shadow: 2.5px 3px 3px 1.5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 15px 15px;
+  max-width: 50%;
+  margin: auto;
+  margin-top: 45px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.car-header {
+  font-size: 2rem;
+  color: hsl(0, 0%, 49%);
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: -10px;
+  margin-bottom: 30px;
+  display: block; /* to center the button */
+  text-align: center;
+}
+
+.input-car-year {
+  width: 200px;
+  background-color: hsl(0, 0%, 71%);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 5px;
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 14%);
+  margin-bottom: 15px;
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: 25px;
+  display: block; /* to center the button */
+  text-align: center;
+}
+
+.input-car-make {
+  width: 200px;
+  background-color: hsl(0, 0%, 71%);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 14%);
+  margin-bottom: 15px;
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: -10px;
+  display: block; /* to center the button */
+  text-align: center;
+}
+
+.input-car-model {
+  width: 200px;
+  background-color: hsl(0, 0%, 71%);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: hsl(0, 0%, 14%);
+  margin-bottom: 15px;
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: -10px;
+  display: block; /* to center the button */
+  text-align: center;
+}
+
+.submit-car-btn {
+  font-family: cursive, "Inter", "Roboto", sans-serif;
+  padding: 4px 7px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: hsl(0, 0%, 36%);
+  color: #ececec;
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: -10px;
+  display: block; /* to center the button */
+  text-align: center;
+  cursor: pointer;
+}
+
+.submit-car-btn:hover {
+  background-color: hsl(0, 0%, 14%);
+  transition: background-color 0.25s;
+}
+
+.submit-car-btn:active {
+  opacity: 0.5;
+  transition: opacity 0.20s;
+}
+
+.car-list {
+  color: #ececec;
+  margin: 0 auto; /* center the button by setting magin first to 0 and then auto that will center it */
+  margin-top: 10px;
+  margin-left: -40px;
+  display: block; /* to center the button */
+  text-align: center;
+  list-style-type: none;
 }
