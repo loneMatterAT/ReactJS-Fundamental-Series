@@ -47,10 +47,14 @@
 // import FoodList from '../14 - React Updating State of Array/FoodList.jsx';
 
 // 15 - React Updating State of Array Object
-import CarList from '../15 - React Updating State of Array Object/CarList.jsx';
+// import CarList from '../15 - React Updating State of Array Object/CarList.jsx';
 
 // 16 - React ToDoList
-import ToDoList from '../16- React ToDoList Program/ToDoList.jsx';
+// import ToDoList from '../16- React ToDoList Program/ToDoList.jsx';
+
+// 17 - React useEffect
+import UseEffect from '../17 - React useEffect/UseEffect.jsx';
+
 
 function App() {
   // return(
@@ -231,12 +235,36 @@ function App() {
       // );
 
       // 16 - React ToDoList Program
+      // return(
+      //   <>
+      //         <ToDoList/>
+      //   </>
+      // );
+
+      // 17 - React useEffect
+      // useEffect() = React Hook that tells React DO SOME CODE WHEN (pick one):
+      //             - This component re-renders
+      //             - This component mounts
+      //             - The state of a value
+
+      // useEffect(function, [dependencies])
+
+      // 1. useEffect(() => {})  -> Runs after every re-render
+      // 2. useEffect(() => {}, [])  -> Runs only on mount
+      // 3. useEffect(() => {}, [value])  -> Runs on mount + when value changes
+
+      // USES
+      // #1 Event Listeners
+      // #2 DOM Manipulation
+      // #3 Subscriptions (real-time updates)
+      // #4 Fetching Data from an API
+      // #5 Clean up when a component unmounts
+      // Note: Unmounting is to removing a component to the DOM, while Mounting i adding component to the DOM
       return(
         <>
-              <ToDoList/>
+            <UseEffect/>
         </>
-      );
-      
+      );    
 
 }
 
