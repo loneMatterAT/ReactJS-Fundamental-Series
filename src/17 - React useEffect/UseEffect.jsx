@@ -35,15 +35,49 @@ function UseEffect() {
   }
 
   // Example 2: Width and Height of the Window
-  // State variable uing innerWidth property
+  // State variables uing innerWidth and innerHeight property
   const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
+  // Using useEffect() to take once or twice event listener, not many
+  useEffect(() => {
+    // We use add event listener
+    window.addEventListener("resize", handleResize);
+    console.log("Event Listener Added"); // For demo purpose on console
+
+    // We add return() statement to clean up code
+    return () => {
+      // To unmount the component to the DOM
+      window.removeEventListener("resize", handleResize);
+      console.log("Event Listener Remove");
+    }
+  }, []);
+
+  // Add another useEffect code
+  useEffect(() => {
+    document.title = `Size: ${width} x ${height}`;
+  }, [width, height]);
+
+
+  // 2. useEffect(() => {}, [])  -> Runs only on mount
+
+  // Function to handle a Resize
+  function handleResize() {
+    // Using setter function()
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  }
+  
 
   return(
     <>
         <p style={{color: color}}>Count: {count}</p>
         <button onClick={addCount}>Add</button>
         <button onClick={subtractCount}>Subtract</button><br/>
-        <button onClick={changeColor}>Change color</button>
+        <button onClick={changeColor}>Change color</button><br/>
+
+        <p>Window Width: {width}px</p>
+        <p>Window Height: {height}px</p>
     </>
   );
 }
