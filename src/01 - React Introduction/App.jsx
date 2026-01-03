@@ -53,7 +53,10 @@
 // import ToDoList from '../16- React ToDoList Program/ToDoList.jsx';
 
 // 17 - React useEffect
-import UseEffect from '../17 - React useEffect/UseEffect.jsx';
+// import UseEffect from '../17 - React useEffect/UseEffect.jsx';
+
+// 18 - React Digital Clock Program
+import DigitalClock from '../18 - React Digital Clock Program/DigitalClock.jsx';
 
 
 function App() {
@@ -260,11 +263,23 @@ function App() {
       // #4 Fetching Data from an API
       // #5 Clean up when a component unmounts
       // Note: Unmounting is to removing a component to the DOM, while Mounting i adding component to the DOM
+      // return(
+      //   <>
+      //       <UseEffect/>
+      //   </>
+      // );    
+
+      // 18 - React Digital Clock Program
       return(
         <>
-            <UseEffect/>
+              <DigitalClock/> {/* We can use it multiple times this 'DigitalClock' component*/}
+              {/* <DigitalClock/>
+              <DigitalClock/>
+              <DigitalClock/>
+              <DigitalClock/>
+              <DigitalClock/> */}
         </>
-      );    
+      );
 
 }
 
