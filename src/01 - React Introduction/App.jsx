@@ -56,7 +56,10 @@
 // import UseEffect from '../17 - React useEffect/UseEffect.jsx';
 
 // 18 - React Digital Clock Program
-import DigitalClock from '../18 - React Digital Clock Program/DigitalClock.jsx';
+// import DigitalClock from '../18 - React Digital Clock Program/DigitalClock.jsx';
+
+// 19 - React useContext
+import ComponentA from '../19 - React useContext/ComponentA.jsx';
 
 
 function App() {
@@ -270,14 +273,36 @@ function App() {
       // );    
 
       // 18 - React Digital Clock Program
+      // return(
+      //   <>
+      //         {/* <DigitalClock/> We can use it multiple times this 'DigitalClock' component */}
+      //         {/* <DigitalClock/>
+      //         <DigitalClock/>
+      //         <DigitalClock/>
+      //         <DigitalClock/>
+      //         <DigitalClock/> */}
+      //   </>
+      // );
+
+      // 19 - React useContext
+      // useContext() = React Hook that allows you to share values
+      //                between multiple level of components
+      //                without passing props through each level
+
+      // Provider Components
+      // 1. import {createContext} from 'react';
+      // 2. export const MyContext = createContext();
+      // 3. <MyContext.Provider value={value}>
+      //      <Child />
+      //    </MyContext.Provider>
+
+      // Consumer Components
+      // 1. import React { useContext } from 'react';
+      //    import { MyContext } from './ComponentA';
+      // 2. const value = useContext(MyContext);
       return(
         <>
-              <DigitalClock/> {/* We can use it multiple times this 'DigitalClock' component*/}
-              {/* <DigitalClock/>
-              <DigitalClock/>
-              <DigitalClock/>
-              <DigitalClock/>
-              <DigitalClock/> */}
+            <ComponentA/>
         </>
       );
 
