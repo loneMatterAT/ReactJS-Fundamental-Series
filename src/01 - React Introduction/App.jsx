@@ -59,7 +59,10 @@
 // import DigitalClock from '../18 - React Digital Clock Program/DigitalClock.jsx';
 
 // 19 - React useContext
-import ComponentA from '../19 - React useContext/ComponentA.jsx';
+// import ComponentA from '../19 - React useContext/ComponentA.jsx';
+
+// 20 - React useRef
+import UseRef from '../20 - React useRef/UseRef.jsx';
 
 
 function App() {
@@ -300,9 +303,25 @@ function App() {
       // 1. import React { useContext } from 'react';
       //    import { MyContext } from './ComponentA';
       // 2. const value = useContext(MyContext);
+      // return(
+      //   <>
+      //       <ComponentA/>
+      //   </>
+      // );
+
+      // 20 - React useRef
+      // useState() = Re-renders the component when the state value changes.
+
+      // useRef() = "use Reference" Does not caue re-renders when its value changes.
+      //            When you want a component to "remember" some information,
+      //            but you don't want that information to trigger new renders.
+
+      //            1. Accessing/Interacting with DOM elements.
+      //            2. Handling Focus, Animations, and Transsitions.
+      //            3. Managing Timers and Intervals
       return(
         <>
-            <ComponentA/>
+            <UseRef />
         </>
       );
 
