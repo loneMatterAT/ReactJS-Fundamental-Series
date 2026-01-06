@@ -1091,3 +1091,75 @@ body {
   border: 3px solid;
   padding: 25px;
 }
+
+/* 21 - ReactJS Stopwatch Program CSS */
+body {
+  font-family: "Orbitron", sans-serif;
+  background-image: url('assets/21\ -\ React\ Stopwatch\ Program\ Pics/time-bg2.jpg'); /* Set the bg image using url() function */
+  background-repeat: no-repeat; /*To avoids the repeat of bg image especially if its small size*/
+  background-position: center; /*Set the position of bg to center*/
+  background-attachment: fixed; /*Sets whether a bg image scrolls with the rest of page or it is fixed and position to the middle of the screen or viewfort*/
+  background-size: cover; /*Now image was taking up the entire screen of the bg*/
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid;
+  border-radius: 50px;
+  background-color: #ffffff;
+  padding: 30px;
+}
+
+.display {
+  font-size: 5rem;
+  font-family: "Orbitron", monospace, sans-serif;
+  font-weight: bold;
+  color: hsl(0, 0%, 25%);
+  text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.75); /* Two pixel for horizontal and vertical offset, then 2px for blur */
+  margin-bottom: 25px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color:#ffffff;
+  transition: background-color 0.5s ease;
+}
+
+.start-btn {
+  background-color: hsla(115, 100%, 40%, 0.854);
+}
+
+.start-btn:hover {
+  background-color: hsla(115, 100%, 32%, 0.854);
+}
+
+.stop-btn {
+  background-color: hsla(10, 90%, 50%, 0.953);
+}
+
+.stop-btn:hover {
+  background-color: hsla(10, 90%, 42%, 0.953);
+}
+
+.reset-btn {
+  background-color: hsla(205, 90%, 47%, 0.953);
+}
+
+.reset-btn:hover {
+  background-color: hsla(205, 90%, 40%, 0.953);
+}
+
+

@@ -8,3 +8,9 @@ createRoot(document.getElementById('root')).render(
   // For demo purposes, we remove StrictMode to try the useRef() hook
     <App />
 )
+
+{/* <StrictMode> */}
+  
+{/* <StrictMode>
+  <App />
+</StrictMode> */}

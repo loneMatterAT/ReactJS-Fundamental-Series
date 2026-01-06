@@ -12,7 +12,7 @@ function UseRef() {
   // Multiple references
   const inputRef1 = useRef(null); // initial value: null (no value)
   const inputRef2 = useRef(null); // initial value: null (no value)
-  const inputRef3 = useRef(null); // initial value: null (no value
+  const inputRef3 = useRef(null); // initial value: null (no value)
 
   // console.log(ref); // demo purpose on console
 

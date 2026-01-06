@@ -62,7 +62,10 @@
 // import ComponentA from '../19 - React useContext/ComponentA.jsx';
 
 // 20 - React useRef
-import UseRef from '../20 - React useRef/UseRef.jsx';
+// import UseRef from '../20 - React useRef/UseRef.jsx';
+
+// 21 - React Stopwatch Program
+import Stopwatch from '../21 - React Stopwatch Program/Stopwatch.jsx';
 
 
 function App() {
@@ -319,9 +322,17 @@ function App() {
       //            1. Accessing/Interacting with DOM elements.
       //            2. Handling Focus, Animations, and Transsitions.
       //            3. Managing Timers and Intervals
+      // return(
+      //   <>
+      //       <UseRef />
+      //   </>
+      // );
+
+      // 21 - React Stopwatch Program
       return(
         <>
-            <UseRef />
+            <Stopwatch />
+            {/* <Stopwatch /> -> we can reuse component of stopwatch many times, with independently runs */}
         </>
       );
 
